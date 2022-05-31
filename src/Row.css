@@ -1,0 +1,27 @@
+.row__poster
+{
+    object-fit: contain;
+    width: 100%;
+    max-width: 200px;
+    transition: transform 450ms; 
+    /* to slow down yhe hover speed */
+    margin-right: 10px;
+}
+.row__posters
+{
+    display:flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+
+}
+.row{
+    margin-left: 20px;
+}
+/* it does not display scroll bar */
+.row__posters::-webkit-scrollbar{
+display: none;
+}
+.row__poster:hover{
+    transform: scale(1.08);
+}
